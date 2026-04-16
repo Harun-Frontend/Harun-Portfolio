@@ -12,7 +12,7 @@ const ProjectsList = ({ onAdd, onDetails, onEdit }) => {
   const dispatch = useDispatch();
 
   // 🔐 PASSWORD
-  const ADMIN_PASSWORD = "12345";
+  const ADMIN_PASSWORD = "Its Harun Khark";
 
   const verifyPassword = () => {
     const pass = prompt("Enter Password 🔐");
@@ -29,7 +29,7 @@ const ProjectsList = ({ onAdd, onDetails, onEdit }) => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:8000/api/projects/deleteProject/${id}`
+        `https://harun-portfolio-backend.onrender.com/api/projects/deleteProject/${id}`
       );
 
       // ✅ UI update without refresh
