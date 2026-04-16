@@ -55,7 +55,7 @@ const AddProjectModal = ({ onClose, editProject }) => {
         alert("Project Updated ✅");
       } else {
         await axios.post(
-          "http://localhost:8000/api/projects/addProject",
+          "https://harun-portfolio-backend.onrender.com/api/projects/addProject",
           formData
         );
         alert("Project Added ✅");
