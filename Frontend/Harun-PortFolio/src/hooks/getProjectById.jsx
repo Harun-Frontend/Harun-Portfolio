@@ -11,7 +11,7 @@ const useGetProjectById = (id) => {
     const fetchProject = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/projects/getProject/${id}`
+          `https://harun-portfolio-backend.onrender.com/api/projects/getProject/${id}`
         );
 
         dispatch(setSingleProject(res.data.project));
