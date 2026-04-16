@@ -10,7 +10,7 @@ const useGetProjects = () => {
     const fetchProjects = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8000/api/projects/getAllProjects"
+          "https://harun-portfolio-backend.onrender.com/api/projects/getAllProjects"
         );
 
         dispatch(setProjects(res.data.projects));
